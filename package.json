@@ -1,5 +1,5 @@
 {
-  "name": "curso-intro-react",
+  "name": "react_todos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +41,8 @@
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.28.0"
-  }
+    "eslint-plugin-react": "^7.28.0",
+    "gh-pages": "^3.2.3"
+  },
+  "homepage": "https://alfcastillo90.github.io/react_todos"
 }
