@@ -27,17 +27,17 @@ function App() {
     setSearchValue,
     addTodo,
   } = useTodos();
-  
+
   return (
     <React.Fragment>
-      <TodoHeader>
+      <TodoHeader loading = { loading }>
         <TodoCounter
-          totalTodos={totalTodos}
-          completedTodos={completedTodos}
+          totalTodos ={ totalTodos }
+          completedTodos = { completedTodos }
         />
         <TodoSearch
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
+          searchValue = { searchValue }
+          setSearchValue = { setSearchValue }
         />
       </TodoHeader>
 
