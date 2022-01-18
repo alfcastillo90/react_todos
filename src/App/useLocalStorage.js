@@ -24,12 +24,12 @@ function useLocalStorage(itemName, initialValue) {
         setError(error);
       }
     }, 3000);
-  });
+  }, []);
 
   const saveItem = (newItem) => {
     try {
-      const stringifiesItem = JSON.stringify(newItem);
-      localStorage.setItem(itemName, stringifiesItem);
+      const stringifyItem = JSON.stringify(newItem);
+      localStorage.setItem(itemName, stringifyItem);
       setItem(newItem);
     } catch(error) {
       setError(error);
